@@ -2,6 +2,12 @@ import React from 'react';
 import { Box} from "@mui/system";
 import { ListItemIcon, List, ListItemText, ListItem, ListItemButton } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import GroupsIcon from '@mui/icons-material/Groups';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import PeopleIcon from '@mui/icons-material/People';
+import SettingsIcon from '@mui/icons-material/Settings';
+import Person2Icon from '@mui/icons-material/Person2';
 
 const Sidebar = () => {
   return (
@@ -18,7 +24,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#pages">
               <ListItemIcon>
-                <HomeIcon/>
+                <AutoStoriesIcon/>
               </ListItemIcon>
               <ListItemText primary="Pages" />
             </ListItemButton>
@@ -26,7 +32,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#groups">
               <ListItemIcon>
-                <HomeIcon/>
+                <GroupsIcon/>
               </ListItemIcon>
               <ListItemText primary="Groups" />
             </ListItemButton>
@@ -34,9 +40,33 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#marketplace">
               <ListItemIcon>
-                <HomeIcon/>
+                <StorefrontIcon/>
               </ListItemIcon>
               <ListItemText primary="Marketplace" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#friends">
+              <ListItemIcon>
+                <PeopleIcon/>
+              </ListItemIcon>
+              <ListItemText primary="Friends" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#settings">
+              <ListItemIcon>
+                <SettingsIcon/>
+              </ListItemIcon>
+              <ListItemText primary="Settings" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#profile">
+              <ListItemIcon>
+                <Person2Icon/>
+              </ListItemIcon>
+              <ListItemText primary="Profile" />
             </ListItemButton>
           </ListItem>
         </List>
