@@ -1,13 +1,7 @@
 import React from 'react';
 import { Box} from "@mui/system";
-import { ListItemIcon, List, ListItemText, ListItem, ListItemButton } from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
-import AutoStoriesIcon from '@mui/icons-material/AutoStories';
-import GroupsIcon from '@mui/icons-material/Groups';
-import StorefrontIcon from '@mui/icons-material/Storefront';
-import PeopleIcon from '@mui/icons-material/People';
-import SettingsIcon from '@mui/icons-material/Settings';
-import Person2Icon from '@mui/icons-material/Person2';
+import { ListItemIcon, List, ListItemText, ListItem, ListItemButton, Switch } from '@mui/material';
+import { ModeNight, Person2, Settings, People, Storefront, Groups, AutoStories, Home } from '@mui/icons-material';
 
 const Sidebar = () => {
   return (
@@ -16,7 +10,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#home">
               <ListItemIcon>
-                <HomeIcon/>
+                <Home/>
               </ListItemIcon>
               <ListItemText primary="Homepage" />
             </ListItemButton>
@@ -24,7 +18,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#pages">
               <ListItemIcon>
-                <AutoStoriesIcon/>
+                <AutoStories/>
               </ListItemIcon>
               <ListItemText primary="Pages" />
             </ListItemButton>
@@ -32,7 +26,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#groups">
               <ListItemIcon>
-                <GroupsIcon/>
+                <Groups/>
               </ListItemIcon>
               <ListItemText primary="Groups" />
             </ListItemButton>
@@ -40,7 +34,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#marketplace">
               <ListItemIcon>
-                <StorefrontIcon/>
+                <Storefront/>
               </ListItemIcon>
               <ListItemText primary="Marketplace" />
             </ListItemButton>
@@ -48,7 +42,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#friends">
               <ListItemIcon>
-                <PeopleIcon/>
+                <People/>
               </ListItemIcon>
               <ListItemText primary="Friends" />
             </ListItemButton>
@@ -56,7 +50,7 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#settings">
               <ListItemIcon>
-                <SettingsIcon/>
+                <Settings/>
               </ListItemIcon>
               <ListItemText primary="Settings" />
             </ListItemButton>
@@ -64,9 +58,17 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href="#profile">
               <ListItemIcon>
-                <Person2Icon/>
+                <Person2/>
               </ListItemIcon>
               <ListItemText primary="Profile" />
+            </ListItemButton>
+          </ListItem>
+          <ListItem disablePadding>
+            <ListItemButton component="a" href="#profile">
+              <ListItemIcon>
+                <ModeNight/>
+              </ListItemIcon>
+              <Switch/>
             </ListItemButton>
           </ListItem>
         </List>
