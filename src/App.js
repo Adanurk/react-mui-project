@@ -5,7 +5,7 @@ import Feed from "./components/Feed";
 import Navbar from "./components/Navbar";
 import Add from "./components/Add";
 import { useState } from "react";
-import { ThemeProvider } from "@emotion/react";
+import { ThemeProvider } from "@mui/material";
 
 function App() {
   const [mode, setMode] = useState("dark");
